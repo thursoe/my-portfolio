@@ -2,6 +2,8 @@
 
 import React from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import { ThemeSwitcher } from "./ThemeSwitcher";
+import { Icon } from '@iconify/react';
 
 export default function MainNavbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -30,7 +32,7 @@ export default function MainNavbar() {
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="end">
+            <NavbarContent className="hidden sm:flex gap-4">
                 <NavbarBrand>
                     <p className="font-bold text-inherit">MY PORTFOLIO</p>
                 </NavbarBrand>
@@ -61,6 +63,21 @@ export default function MainNavbar() {
                 </NavbarItem>
             </NavbarContent>
 
+            <NavbarContent as="div" className="hidden sm:flex" justify="end">
+                <NavbarItem>
+                    <Link color="foreground" href="#">
+                        <Icon icon="iconoir:linkedin" width="1.2em" height="1.2em" />
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link color="foreground" href="#">
+                        <Icon icon="iconoir:github-circle" width="1.2em" height="1.2em" />
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <ThemeSwitcher />
+                </NavbarItem>
+            </NavbarContent>
             <NavbarMenu>
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
