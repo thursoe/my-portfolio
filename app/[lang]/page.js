@@ -3,6 +3,8 @@ import MainNavbar from "./components/MainNavbar";
 import { Button } from "@nextui-org/react";
 import Image from 'next/image'
 import profile from "../../public/IMG_00136.png"
+import Slideshow from "./components/Slideshow";
+import CircleBackground from "./components/CircleBackground";
 
 export default async function Home({ params: { lang } }) {
   const dict = await getDictionary(lang)
@@ -31,7 +33,47 @@ export default async function Home({ params: { lang } }) {
             </div>
           </div>
         </section>
-      </main>
+        <section id="about" className="relative overflow-hidden">
+          <CircleBackground />
+          <div className="grid place-content-center w-4/5 h-[calc(100vh-64px)] mx-auto text-center space-y-5 p-8">
+            <h2 className="text-5xl font-bold">Hello! This is <span className="text-purple-600">Thura</span>.</h2>
+            <h2 className="text-lg font-light">A professional developer with a strong engineering background, currently situated in Yangon, Myanmar. Graduated from Technological University Mandalay, with a focus on enterprise software development.</h2>
+          </div>
+        </section>
+        <section id="experience">
+          <div className="w-4/5 mx-auto p-10">
+            <h1 className="text-3xl font-bold">Experience</h1>
+            <div className="p-8 space-y-2">
+              <h3 className="text-lg font-bold">Atlantbh</h3>
+              <h1 className="text-xl font-bold">Junior Software Engineer</h1>
+              <p className="text-sm italic">Jun 2022 - Jan 2024</p>
+              <ul className="list-disc leading-7">
+                <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
+                <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
+                <li>Provided mentorship to two IT college students, enhancing their practical software engineering skills.</li>
+              </ul>
+            </div>
+            <div className="p-8 space-y-2">
+              <h1 className="text-xl font-bold">Atlantbh</h1>
+              <h1 className="text-xl font-bold">Junior Software Engineer</h1>
+              <ul className="list-disc leading-7">
+                <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
+                <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
+                <li>Provided mentorship to two IT college students, enhancing their practical software engineering skills.</li>
+              </ul>
+            </div>
+            <div className="p-8 space-y-2">
+              <h1 className="text-xl font-bold">Atlantbh</h1>
+              <h1 className="text-xl font-bold">Junior Software Engineer</h1>
+              <ul className="list-disc leading-7">
+                <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
+                <li>Developed a full-stack enterprise applications using React, PostgreSQL and Docker.</li>
+                <li>Provided mentorship to two IT college students, enhancing their practical software engineering skills.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main >
     </>
   );
 }
