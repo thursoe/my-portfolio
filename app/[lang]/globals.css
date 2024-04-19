@@ -10,7 +10,7 @@
 .typing-animation {
     width: 100%;
     overflow: hidden;
-    animation: typing 2s steps(40, end);
+    animation: typing 2s steps(40, end) 1s 5 alternate;
     white-space: nowrap;
 }
 
