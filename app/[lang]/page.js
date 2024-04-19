@@ -6,6 +6,7 @@ import profile from "../../public/IMG_00136.png"
 import Slideshow from "./components/Slideshow";
 import CircleBackground from "./components/CircleBackground";
 import CardGrid from "./components/CardGrid";
+import ContactSection from "./components/ContactSection";
 
 export default async function Home({ params: { lang } }) {
   const dict = await getDictionary(lang)
@@ -78,6 +79,11 @@ export default async function Home({ params: { lang } }) {
           <div className="w-4/5 sm:h-[calc(100vh-64px)] mx-auto py-10 grid place-content-center">
             <h1 className="text-center text-3xl font-bold mb-10">Expertise and skills</h1>
             <CardGrid />
+          </div>
+        </section>
+        <section id="contact">
+          <div className="w-4/5 sm:h-[calc(100vh-64px)] mx-auto flex items-center justify-center">
+            <ContactSection />
           </div>
         </section>
       </main >
