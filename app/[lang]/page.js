@@ -1,12 +1,12 @@
 import { getDictionary } from "./dictionaries";
 import MainNavbar from "./components/MainNavbar";
-import { Button } from "@nextui-org/react";
+import { Button, Divider } from "@nextui-org/react";
 import Image from 'next/image'
 import profile from "../../public/IMG_00136.png"
-import Slideshow from "./components/Slideshow";
 import CircleBackground from "./components/CircleBackground";
 import CardGrid from "./components/CardGrid";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 export default async function Home({ params: { lang } }) {
   const dict = await getDictionary(lang)
@@ -86,6 +86,8 @@ export default async function Home({ params: { lang } }) {
             <ContactSection />
           </div>
         </section>
+        <Divider className="opacity-40 mt-5"/>
+        <Footer />
       </main >
     </>
   );
