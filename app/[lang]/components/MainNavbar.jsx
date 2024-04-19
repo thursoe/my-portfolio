@@ -66,12 +66,12 @@ export default function MainNavbar() {
 
             <NavbarContent as="div" className="hidden sm:flex" justify="end">
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" isExternal href="https://www.linkedin.com/in/thura-soe/">
                         <Icon icon="iconoir:linkedin" width="1.2em" height="1.2em" />
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" isExternal href="https://github.com/thursoe">
                         <Icon icon="iconoir:github-circle" width="1.2em" height="1.2em" />
                     </Link>
                 </NavbarItem>
