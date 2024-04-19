@@ -18,7 +18,7 @@ export function ThemeSwitcher() {
 
     return (
         <>
-            <Switch defaultSelected aria-label={theme}
+            <Switch defaultSelected aria-label={theme} color="secondary"
                 onValueChange={(isSelected) => isSelected ? setTheme('light') : setTheme('dark')}
                 startContent={<Icon icon="material-symbols:sunny-rounded" />}
                 endContent={<Icon icon="material-symbols:clear-night" />} />
