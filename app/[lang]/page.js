@@ -5,6 +5,7 @@ import Image from 'next/image'
 import profile from "../../public/IMG_00136.png"
 import Slideshow from "./components/Slideshow";
 import CircleBackground from "./components/CircleBackground";
+import CardGrid from "./components/CardGrid";
 
 export default async function Home({ params: { lang } }) {
   const dict = await getDictionary(lang)
@@ -71,6 +72,12 @@ export default async function Home({ params: { lang } }) {
                 <li>Provided mentorship to two IT college students, enhancing their practical software engineering skills.</li>
               </ul>
             </div>
+          </div>
+        </section>
+        <section id="skill">
+          <div className="w-4/5 sm:h-[calc(100vh-64px)] mx-auto py-10 grid place-content-center">
+            <h1 className="text-center text-3xl font-bold mb-10">Expertise and skills</h1>
+            <CardGrid />
           </div>
         </section>
       </main >
