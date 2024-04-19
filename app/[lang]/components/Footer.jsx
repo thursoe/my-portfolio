@@ -8,7 +8,7 @@ import Counter from './Counter';
 const Footer = () => {
     return (
         <footer className="bg-neutral-50 dark:bg-slate-950">
-            <div className="w-4/5 mx-auto py-5">
+            <div className="container w-4/5 mx-auto py-5">
                 <div className="flex justify-between items-center">
                     <div className="hidden sm:block">
                         <p className="font-bold text-inherit mb-2">MY PORTFOLIO</p>

@@ -16,8 +16,8 @@ export default async function Home({ params: { lang } }) {
       <MainNavbar />
       <main>
         <section id="hero">
-          <div className="grid sm:grid-cols-2 w-4/5 h-[calc(100vh-64px)] mx-auto">
-            <div className="grid content-center gap-2">
+          <div className="grid sm:grid-cols-2 container w-4/5 h-[calc(100vh-64px)] mx-auto">
+            <div className="grid place-content-center gap-2">
               <h2 className="text-lg font-light">Hello! This is Thura.</h2>
               <h1 className="text-xl font-bold typing-animation after:content-['|'] after:animate-ping">A Passionate Software Engineer</h1>
               <div className="flex gap-2 mt-4">
@@ -43,7 +43,7 @@ export default async function Home({ params: { lang } }) {
           </div>
         </section>
         <section id="experience">
-          <div className="w-4/5 mx-auto p-10">
+          <div className="container w-4/5 mx-auto p-10">
             <h1 className="text-3xl font-bold">Experience</h1>
             <div className="p-8 space-y-2">
               <h3 className="text-lg font-bold">Atlantbh</h3>
