@@ -7,7 +7,7 @@ import { Icon } from '@iconify/react';
 const ContactSection = () => {
     return (
         <>
-            <div className="grid grid-cols-2 gap-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-14">
                 <div className="flex flex-col space-y-5">
                     <h1 className="text-3xl font-bold">Contact with me</h1>
                     <p className="text-justify">I'd love to hear from you. Send me a message!</p>
