@@ -7,6 +7,7 @@ import CircleBackground from "./components/CircleBackground";
 import CardGrid from "./components/CardGrid";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import ScrollTopButton from "./components/ScrollTopButton";
 
 export default async function Home({ params: { lang } }) {
   const dict = await getDictionary(lang)
@@ -89,6 +90,7 @@ export default async function Home({ params: { lang } }) {
         <Divider className="opacity-40 mt-5" />
         <Footer />
       </main >
+      <ScrollTopButton />
     </>
   );
 }
