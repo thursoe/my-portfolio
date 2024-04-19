@@ -20,6 +20,7 @@ export default function MainNavbar() {
         <Navbar
             isBordered
             isMenuOpen={isMenuOpen}
+            shouldHideOnScroll
             onMenuOpenChange={setIsMenuOpen}
         >
             <NavbarContent className="sm:hidden" justify="start">
@@ -37,27 +38,27 @@ export default function MainNavbar() {
                     <p className="font-bold text-inherit">MY PORTFOLIO</p>
                 </NavbarBrand>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="#" className="hover:text-purple-600">
                         Home
                     </Link>
                 </NavbarItem>
-                <NavbarItem isActive>
-                    <Link href="#" aria-current="page">
+                <NavbarItem>
+                    <Link href="#about" color="foreground" className="hover:text-purple-600">
                         About
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="#experience" className="hover:text-purple-600">
                         Experience
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="#skills" className="hover:text-purple-600">
                         Skills
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="#contact" className="hover:text-purple-600">
                         Contact
                     </Link>
                 </NavbarItem>
@@ -82,10 +83,7 @@ export default function MainNavbar() {
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
                         <Link
-                            className="w-full"
-                            color={
-                                index === 2 ? "warning" : "foreground"
-                            }
+                            className="w-full hover:text-purple-600"
                             href="#"
                             size="lg"
                         >

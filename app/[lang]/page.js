@@ -37,7 +37,7 @@ export default async function Home({ params: { lang } }) {
         </section>
         <section id="about" className="relative overflow-hidden">
           <CircleBackground />
-          <div className="grid place-content-center w-4/5 h-[calc(100vh-64px)] mx-auto text-center space-y-5 p-8">
+          <div className="grid place-content-center w-4/5 h-screen mx-auto text-center space-y-5 pb-14">
             <h2 className="text-5xl font-bold">Hello! This is <span className="text-purple-600">Thura</span>.</h2>
             <h2 className="text-lg font-light">A professional developer with a strong engineering background, currently situated in Yangon, Myanmar. Graduated from Technological University Mandalay, with a focus on enterprise software development.</h2>
           </div>
@@ -75,18 +75,18 @@ export default async function Home({ params: { lang } }) {
             </div>
           </div>
         </section>
-        <section id="skill">
-          <div className="w-4/5 sm:h-[calc(100vh-64px)] mx-auto py-10 grid place-content-center">
+        <section id="skills">
+          <div className="w-4/5 sm:h-screen mx-auto pb-14 grid place-content-center">
             <h1 className="text-center text-3xl font-bold mb-10">Expertise and skills</h1>
             <CardGrid />
           </div>
         </section>
         <section id="contact">
-          <div className="w-4/5 sm:h-[calc(100vh-64px)] mx-auto flex items-center justify-center">
+          <div className="w-4/5 sm:h-screen mx-auto flex items-center justify-center pb-14">
             <ContactSection />
           </div>
         </section>
-        <Divider className="opacity-40 mt-5"/>
+        <Divider className="opacity-40 mt-5" />
         <Footer />
       </main >
     </>
