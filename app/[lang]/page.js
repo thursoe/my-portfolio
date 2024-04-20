@@ -31,6 +31,7 @@ export default async function Home({ params: { lang } }) {
                 width={300}
                 alt="NextUI hero Image"
                 src={profile}
+                priority={true}
                 className="rounded-lg"
               />
             </div>
