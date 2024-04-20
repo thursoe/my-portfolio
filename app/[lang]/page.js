@@ -1,6 +1,6 @@
 import { getDictionary } from "./dictionaries";
 import MainNavbar from "./components/MainNavbar";
-import { Button, Divider } from "@nextui-org/react";
+import { Button, Divider, Link } from "@nextui-org/react";
 import Image from 'next/image'
 import profile from "../../public/IMG_00136.png"
 import CircleBackground from "./components/CircleBackground";
@@ -23,7 +23,7 @@ export default async function Home({ params: { lang } }) {
               <h1 className="text-lg sm:text-xl font-bold typing-animation after:content-['|'] after:animate-ping">{dict.home.description}</h1>
               <div className="flex gap-2 mt-4">
                 <Button color="secondary" className="animate-pulse">{dict.home.download}</Button>
-                <Button>{dict.home.contact}</Button>
+                <Button as={Link} href="#contact">{dict.home.contact}</Button>
               </div>
             </div>
             <div className="grid justify-center items-center gap-2">
