@@ -19,11 +19,11 @@ export default async function Home({ params: { lang } }) {
         <section id="hero">
           <div className="grid sm:grid-cols-2 container w-4/5 h-[calc(100vh-64px)] mx-auto">
             <div className="grid place-content-center gap-2">
-              <h2 className="text-lg font-light">Hello! This is Thura.</h2>
-              <h1 className="text-lg sm:text-xl font-bold typing-animation after:content-['|'] after:animate-ping">A Passionate Software Engineer</h1>
+              <h2 className="text-lg font-light">{dict.home.welcome}</h2>
+              <h1 className="text-lg sm:text-xl font-bold typing-animation after:content-['|'] after:animate-ping">{dict.home.description}</h1>
               <div className="flex gap-2 mt-4">
-                <Button color="secondary" className="animate-pulse">Download CV</Button>
-                <Button>Contact Me</Button>
+                <Button color="secondary" className="animate-pulse">{dict.home.download}</Button>
+                <Button>{dict.home.contact}</Button>
               </div>
             </div>
             <div className="grid justify-center items-center gap-2">
@@ -40,7 +40,7 @@ export default async function Home({ params: { lang } }) {
           <CircleBackground />
           <div className="grid place-content-center w-4/5 h-screen mx-auto text-center space-y-5 pb-14">
             <h2 className="text-5xl font-bold">Hello! This is <span className="text-purple-600">Thura</span>.</h2>
-            <h2 className="text-lg font-light">A professional developer with a strong engineering background, currently situated in Yangon, Myanmar. Graduated from Technological University Mandalay, with a focus on enterprise software development.</h2>
+            <h2 className="text-lg font-light">{dict.about.description}</h2>
           </div>
         </section>
         <section id="experience">

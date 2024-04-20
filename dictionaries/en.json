@@ -1,5 +1,15 @@
 {
+    "home": {
+        "welcome": "Hello! This is Thura.",
+        "description": "A Passionate Software Engineer",
+        "download": "Download CV",
+        "contact": "Contact Me"
+    },
     "about": {
-        "welcome": "Hello Welcome!"
+        "title": "Hello!",
+        "description": "A professional developer with a strong engineering background, currently situated in Yangon, Myanmar. Graduated from Technological University Mandalay, with a focus on enterprise software development."
+    },
+    "contact": {
+        "title": "Contact with me"
     }
 }
