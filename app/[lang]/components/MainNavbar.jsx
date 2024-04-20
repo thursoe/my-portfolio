@@ -9,18 +9,18 @@ export default function MainNavbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [
-        "Home",
-        "About",
-        "Experience",
-        "Skills",
-        "Contact",
+        { name: "Home", link: "#" },
+        { name: "About", link: "#about" },
+        { name: "Experience", link: "#experience" },
+        { name: "Skills", link: "#skills" },
+        { name: "Contact", link: "#contact" },
     ];
 
     return (
         <Navbar
             isBordered
             isMenuOpen={isMenuOpen}
-            shouldHideOnScroll
+            shouldHideOnScroll={!isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
         >
             <NavbarContent className="sm:hidden" justify="start">
@@ -81,13 +81,14 @@ export default function MainNavbar() {
             </NavbarContent>
             <NavbarMenu>
                 {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
+                    <NavbarMenuItem key={`${item.name}-${index}`}>
                         <Link
                             className="w-full hover:text-purple-600"
-                            href="#"
+                            href={item.link}
                             size="lg"
+                            onClick={() => setIsMenuOpen(false)}
                         >
-                            {item}
+                            {item.name}
                         </Link>
                     </NavbarMenuItem>
                 ))}
